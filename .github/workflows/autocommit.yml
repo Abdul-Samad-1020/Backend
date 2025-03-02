@@ -1,10 +1,9 @@
 name: Auto Commit Bot
 
 on:
-on:
   workflow_dispatch:  # Allows manual trigger
   schedule:
-    - cron: '0 0 * * *'  # Runs once a day at midnight (UTC)
+    - cron: '0 0 * * *'  # Runs every day at midnight (UTC)
 
 jobs:
   commit:
@@ -13,11 +12,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Bot"
+          git config --global user.email "abdulsamadmughal1020@gmail.com"
+
       - name: Make a fake commit
         run: |
           date >> commit.log
-          git config --global user.name "Your Name"
-          git config --global user.email "your-email@example.com"
           git add commit.log
-          git commit -m "Automated commit: $(date)"
+          git commit -m "Automated commit: $(date)" || echo "No changes to commit"
           git push
