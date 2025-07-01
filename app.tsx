@@ -1,6 +1,7 @@
 import React from 'react'
 import Name from './Components/Name'
 import Paraent from './Components/Paraent'
+import padas from "../components/Pandas';
 import Profile from './Components/Profile'
 function App() {
   return (
