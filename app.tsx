@@ -12,8 +12,6 @@ function App() {
       <Paraent/>
       <ChildComponent message= "hi"/>
       <Profile name="Abdul Samad" age={23}/>
-mjhyfkjglkhj.kl
-      h
 
 
       
