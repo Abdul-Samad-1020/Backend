@@ -3,9 +3,7 @@ import Name from './Components/Name'
 import Paraent from './Components/Paraent'
 import padas from "../components/Pandas'
 import Profile from './Components/Profile'
-function App() {
-  <h1>thisdf sdnlfksdd flsdjfwldadsnfsd f;ksd mf asdkdbfmasd kmf asd;kjd f;ksda fkas d;kdfbaskd f;kfksdndff as</h1>
-  return (
+function App() { 
     <div>
       <h1>this is App.jsx</h1>
       <Name/>
