@@ -4,6 +4,8 @@ import Paraent from './Components/Paraent'
 import padas from "../components/Pandas'
 import Profile from './Components/Profile'
 function App() { 
+    return( 
+        
     <div>
       <h1>this is App.jsx</h1>
       <Name/>
